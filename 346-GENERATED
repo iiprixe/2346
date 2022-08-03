@@ -1,0 +1,177 @@
+getgenv().feed = false
+getgenv().clean = false
+
+local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
+
+local UI = Material.Load({
+     Title = "By Stormzzy#0880 : Aquarium Tycoon",
+     Style = 1,
+     SizeX = 400,
+     SizeY = 350,
+     Theme = "Dark"
+})
+
+local Page = UI.New({
+    Title = "Main"
+})
+
+Page.Dropdown({
+    Text = "Choose Your Tycoon (Needed)",
+    Callback = function(value)
+        _G.tycoon = value
+    end,
+    Options = {"1", "2", "3", "4", "5"}
+})
+
+Page.Toggle({
+    Text = "Auto Feed",
+    Callback = function(value)
+        getgenv().feed = value
+        spawn(function()
+            while feed == true do
+                wait()
+ 
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank
+
+game:GetService("ReplicatedStorage").Events.AttemptCleanTank:FireServer(ohInstance1)              
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank1
+
+game:GetService("ReplicatedStorage").Events.FeedTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank2
+
+game:GetService("ReplicatedStorage").Events.FeedTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank3
+
+game:GetService("ReplicatedStorage").Events.FeedTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank4
+
+game:GetService("ReplicatedStorage").Events.FeedTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank5
+
+game:GetService("ReplicatedStorage").Events.FeedTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank6
+
+game:GetService("ReplicatedStorage").Events.FeedTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank7
+
+game:GetService("ReplicatedStorage").Events.FeedTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank8
+
+game:GetService("ReplicatedStorage").Events.FeedTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.LargeTank
+
+game:GetService("ReplicatedStorage").Events.FeedTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank10
+
+game:GetService("ReplicatedStorage").Events.FeedTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank11
+
+game:GetService("ReplicatedStorage").Events.FeedTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank12
+
+game:GetService("ReplicatedStorage").Events.FeedTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank13
+
+game:GetService("ReplicatedStorage").Events.FeedTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank14
+
+game:GetService("ReplicatedStorage").Events.FeedTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank15
+
+game:GetService("ReplicatedStorage").Events.FeedTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank16
+
+game:GetService("ReplicatedStorage").Events.FeedTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank17
+
+game:GetService("ReplicatedStorage").Events.FeedTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank18
+
+game:GetService("ReplicatedStorage").Events.FeedTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank19
+
+game:GetService("ReplicatedStorage").Events.FeedTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank20
+
+game:GetService("ReplicatedStorage").Events.FeedTank:FireServer(ohInstance1)
+            end
+        end)
+    end,
+    Enabled = false
+})
+
+Page.Toggle({
+    Text = "Auto Clean",
+    Callback = function(value)
+        getgenv().clean = value
+        spawn(function()
+            while clean == true do
+                wait()
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank
+
+game:GetService("ReplicatedStorage").Events.AttemptCleanTank:FireServer(ohInstance1)   
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank1
+
+game:GetService("ReplicatedStorage").Events.AttemptCleanTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank2
+
+game:GetService("ReplicatedStorage").Events.AttemptCleanTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank3
+
+game:GetService("ReplicatedStorage").Events.AttemptCleanTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank4
+
+game:GetService("ReplicatedStorage").Events.AttemptCleanTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank5
+
+game:GetService("ReplicatedStorage").Events.AttemptCleanTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank6
+
+game:GetService("ReplicatedStorage").Events.AttemptCleanTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank7
+
+game:GetService("ReplicatedStorage").Events.AttemptCleanTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank8
+
+game:GetService("ReplicatedStorage").Events.AttemptCleanTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.LargeTank
+
+game:GetService("ReplicatedStorage").Events.AttemptCleanTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank10
+
+game:GetService("ReplicatedStorage").Events.AttemptCleanTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank11
+
+game:GetService("ReplicatedStorage").Events.AttemptCleanTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank12
+
+game:GetService("ReplicatedStorage").Events.AttemptCleanTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank13
+
+game:GetService("ReplicatedStorage").Events.AttemptCleanTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank14
+
+game:GetService("ReplicatedStorage").Events.AttemptCleanTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank15
+
+game:GetService("ReplicatedStorage").Events.AttemptCleanTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank16
+
+game:GetService("ReplicatedStorage").Events.AttemptCleanTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank17
+
+game:GetService("ReplicatedStorage").Events.AttemptCleanTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank18
+
+game:GetService("ReplicatedStorage").Events.AttemptCleanTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank19
+
+game:GetService("ReplicatedStorage").Events.AttemptCleanTank:FireServer(ohInstance1)
+local ohInstance1 = workspace.Tycoons[_G.tycoon].Buildings.Tank20
+
+game:GetService("ReplicatedStorage").Events.AttemptCleanTank:FireServer(ohInstance1)  
+            end
+        end)
+    end,
+    Enabled = false
+})
